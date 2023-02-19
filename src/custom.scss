@@ -1,0 +1,25 @@
+// overwrite theme variables
+
+$primary: #7367F0;
+$secondary: #5E5873;
+$dark: #6E6B7B;
+$light: #FFFFFF;
+$success: #66ab57;
+$info: #B9B9C3;
+$warning: #F8F8F8;
+$danger: #f44336;
+
+body {
+  background: $warning !important;
+}
+
+.popover-arrow::before {
+  display: none !important;
+}
+
+.popover-arrow::after {
+  display: none !important;
+}
+
+// import bootstrap styles at the bottom!
+@import '~bootstrap/scss/bootstrap.scss';
