@@ -5,7 +5,7 @@ import App from 'app/App';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
-// import './global.css';
+import './global.css';
 import './custom.scss';
 import { store } from 'store/store';
 

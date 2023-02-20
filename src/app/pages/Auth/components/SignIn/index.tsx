@@ -65,13 +65,10 @@ function SignIn() {
 
   return (
     <form onSubmit={handleSubmit(submitForm)}>
-      <div
-        className="text-secondary"
-        style={{ fontSize: '18px', fontWeight: 500 }}
-      >
+      <div className="text-secondary welcomeText">
         Welcome to ReactJS Test Interview! 👋🏻
       </div>
-      <div className="text-dark mt-2" style={{ fontSize: '14px' }}>
+      <div className="text-dark mt-2 fs14">
         Please sign-in to your account and start the adventure
       </div>
       <FormGroup>
@@ -94,7 +91,7 @@ function SignIn() {
         />
         <div className="mt-2">
           <Input type="checkbox" />
-          <Label className="ms-3 text-dark" check style={{ fontSize: '14px' }}>
+          <Label className="ms-3 text-dark fs14" check>
             Remember me
           </Label>
         </div>
@@ -105,18 +102,11 @@ function SignIn() {
         >
           <span className="text-light">Login</span>
         </Button>
-        <Label
-          style={{ fontSize: '14px' }}
-          className="mt-3 d-flex justify-content-center text-dark"
-        >
+        <Label className="mt-3 d-flex justify-content-center text-dark fs14">
           New on our platform?
           <span
-            className="text-primary"
+            className="text-primary textDirector"
             role="button"
-            style={{
-              fontSize: '14px',
-              marginLeft: '10px',
-            }}
             onClick={redirectSignUp}
           >
             {' '}

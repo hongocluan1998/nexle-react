@@ -23,27 +23,19 @@ export default function Auth(props: Props) {
       <Row>
         <Col
           sm="8"
+          className="bgAuth"
           style={{
             backgroundImage: `url(${isSignIn ? BG_SIGN_IN : BG_SIGN_UP})`,
-            height: '100vh',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
           }}
         />
         <Col
           sm="4"
-          className="d-flex flex-column justify-content-center bg-light"
-          style={{
-            padding: '75px 4.861vw 0vw 4.861vw',
-          }}
+          className="d-flex flex-column justify-content-center bg-light layoutFormAuth"
         >
           {isSignIn ? <SignIn /> : <SignUp />}
           <div className="d-flex align-items-center">
             <hr className="w-100" />
-            <span style={{ fontSize: '14px' }} className="ms-4 mx-4 text-dark">
-              or
-            </span>
+            <span className="ms-4 mx-4 text-dark fs14">or</span>
             <hr className="w-100" />
           </div>
           <div className="mt-3 d-flex align-items-center justify-content-center">

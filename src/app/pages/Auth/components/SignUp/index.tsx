@@ -52,13 +52,8 @@ function SignUp() {
   };
   return (
     <form onSubmit={handleSubmit(submitForm)}>
-      <div
-        className="text-secondary"
-        style={{ fontSize: '18px', fontWeight: 500 }}
-      >
-        Adventure starts here
-      </div>
-      <div style={{ fontSize: '14px' }} className="text-dark mt-2">
+      <div className="text-secondary welcomeText">Adventure starts here</div>
+      <div className="text-dark mt-2 fs14">
         Make your app management easy and fun!
       </div>
       <FormGroup>
@@ -97,12 +92,9 @@ function SignUp() {
         />
         <div className="mt-4">
           <Input type="checkbox" />
-          <Label className="ms-3 text-dark" check style={{ fontSize: '14px' }}>
+          <Label className="ms-3 text-dark fs14" check>
             i agree to
-            <span className="text-primary" style={{ fontSize: '14px' }}>
-              {' '}
-              privacy policy & terms
-            </span>
+            <span className="text-primary fs14"> privacy policy & terms</span>
           </Label>
         </div>
         <Button
@@ -112,18 +104,11 @@ function SignUp() {
         >
           <span className="text-light">Sign Up</span>
         </Button>
-        <Label
-          style={{ fontSize: '14px' }}
-          className="mt-3 d-flex justify-content-center text-dark"
-        >
+        <Label className="mt-3 d-flex justify-content-center text-dark fs14">
           Already have an account?
           <span
-            className="text-primary"
+            className="text-primary textDirector"
             role="button"
-            style={{
-              fontSize: '14px',
-              marginLeft: '10px',
-            }}
             onClick={redirectSignIn}
           >
             {' '}

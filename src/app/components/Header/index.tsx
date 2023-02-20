@@ -26,32 +26,19 @@ function Header() {
       });
   };
   return (
-    <div
-      className="d-flex justify-content-between position-fixed top-0 start-0 end-0 bg-light"
-      style={{
-        padding: '12.5px 28px',
-      }}
-    >
+    <div className="d-flex justify-content-between position-fixed top-0 start-0 end-0 bg-light boxInfor">
       <div />
       <div className="d-flex" id="UncontrolledPopover">
         <div>
-          <div style={{ fontSize: '14px' }} className="text-dark">
-            {userInfo?.displayName}
-          </div>
-          <div className="text-info" style={{ fontSize: '12px' }}>
-            {userInfo?.email}
-          </div>
+          <div className="text-dark fs14">{userInfo?.displayName}</div>
+          <div className="text-info fs12">{userInfo?.email}</div>
         </div>
         <img className="ms-3" src={AVT_ICON} alt="Avatar icon" role="button" />
       </div>
       <UncontrolledPopover placement="bottom" target="UncontrolledPopover">
         <PopoverBody
-          className="text-info d-flex justify-content-end align-items-center"
+          className="text-info d-flex justify-content-end align-items-center popoverLogout"
           role="button"
-          style={{
-            fontSize: '14px',
-            minWidth: '150px',
-          }}
           onClick={handleLogout}
         >
           Logout <img className="ms-3" src={LGOUT_ICON} alt="Logout icon." />

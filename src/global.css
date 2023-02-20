@@ -1,0 +1,59 @@
+.copyRight {
+  padding: 16px 28px;
+  font-size: 0.875rem;
+}
+
+.boxInfor {
+  padding: 12.5px 28px;
+}
+
+.fs14 {
+  font-size: 0.875rem;
+}
+
+.fs12 {
+  font-size: 0.75rem;
+}
+
+.fs24 {
+  font-size: 1.5rem;
+}
+
+.popoverLogout {
+  font-size: 0.875rem;
+  min-width: 150px;
+}
+
+.bgAuth {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.layoutFormAuth {
+  padding: 75px 4.861vw 0vw 4.861vw !important;
+}
+
+.welcomeText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.textDirector {
+  font-size: 0.875rem;
+  margin-left: 10px;
+}
+
+.layoutDashboard {
+  padding: 17.77vh 0px 11.66vh;
+}
+
+.mtImgDashboard {
+  margin-top: 17.685vh;
+}
+
+.imgMain {
+  width: 41.319vw;
+  height: 45.92vh;
+}

@@ -39,10 +39,7 @@ function Textfield(props: Props) {
       render={({ field, fieldState }) => {
         return (
           <>
-            <Label
-              className={`${className || ''} mb-0 text-dark`}
-              style={{ fontSize: '12px' }}
-            >
+            <Label className={`${className || ''} mb-0 text-dark fs12`}>
               {label} {isRequired && <span className="text-danger">*</span>}
             </Label>
             {type === 'password' ? (
